@@ -15,22 +15,7 @@ const Info = () => {
                 <Row data-aos="fade-up" >
 
                     <Col >
-                        <Navbar collapseOnSelect expand="lg" style={{ color: "#1E1E1E" }}>
-                            <Container>
-                                <Navbar.Brand href="#home"></Navbar.Brand>
-                                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                                <Navbar.Collapse id="responsive-navbar-nav">
-                                    <Nav className="ms-auto">
-                                        <Nav.Link href="#home">Home</Nav.Link>
-                                        <Nav.Link href="#about">About Me</Nav.Link>
-                                        <Nav.Link href="#projects">Projects</Nav.Link>
-
-                                    </Nav>
-
-                                </Navbar.Collapse>
-                            </Container>
-                        </Navbar>
-
+                        
                     </Col>
                 </Row>
                 <Row xs={1} md={2}>

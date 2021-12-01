@@ -9,6 +9,9 @@ import ImageSlider from './Slider/Slider';
 import ParticleConfig from './ParticaleConfig/ParticleConfig';
 import Education from './Education/Education';
 import DeveloperBanner from './DeveloperBanner/DeveloperBanner';
+import Navbar from './Navbar/Navbar';
+import Service from './Service/Service';
+
 
 
 const Home = () => {
@@ -20,8 +23,9 @@ const Home = () => {
 
 
             <div >
-
+<Navbar></Navbar>
                 <DeveloperBanner></DeveloperBanner>
+                <Service></Service>
                 <Info></Info>
                 {/* <About></About> */}
                 <Education></Education>

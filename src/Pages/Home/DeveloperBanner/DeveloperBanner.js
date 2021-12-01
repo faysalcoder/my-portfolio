@@ -1,16 +1,13 @@
 import React from 'react';
 import { Reveal } from "react-reveal/";
+import {Container, Nav, Navbar} from 'react-bootstrap'
 
 const DeveloperBanner = () => {
     return (
         <div>
+           
+
             <section
-
-
-
-
-
-
 
 
 
@@ -19,7 +16,9 @@ const DeveloperBanner = () => {
                 style={{
                     background:
                         "linear-gradient( 1.14deg, rgb(244,247,252) 0%, rgb(255,255,255) 100%)",
+                        width:'100%'
                 }}
+                
             >
                 <img
                     className="d_shap"
@@ -27,7 +26,7 @@ const DeveloperBanner = () => {
                     alt=""
                 />
                 <div className="overlay_color"></div>
-                <div className="container">
+               <Container>
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="frelencer_content developer_content">
@@ -99,8 +98,9 @@ const DeveloperBanner = () => {
                                 </Reveal>
                                 <Reveal effect="fadeInDown" duration={1600}>
                                     <img
+                                    style={{width:'100%'}}
                                         className="f_img_four"
-                                        src="https://i.ibb.co/Nn7Dr8B/man.png"
+                                        src="https://i.ibb.co/0Zf9Hnr/vector-potriat1-ai.png"
                                         alt=""
                                     />
                                 </Reveal>
@@ -132,7 +132,7 @@ const DeveloperBanner = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                    </Container>
             </section>
         </div>
     );
