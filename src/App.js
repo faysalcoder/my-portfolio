@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './Pages/Home/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useParams } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ParticleConfig from './Pages/Home/ParticaleConfig/ParticleConfig';
 import Particles from 'react-particles-js';
 import { useEffect, useState } from 'react';
 import { HashLoader } from 'react-spinners';
 import Typewriter from 'typewriter-effect';
+import ViewDetail from './Pages/Home/ViewDetail/ViewDetail';
+import Projects from './Pages/Home/Projects/Projects';
 
 
 
@@ -51,6 +53,14 @@ function App() {
                 <Route exact path="/">
 
                   <Home></Home>
+                </Route>
+                <Route  path="/project/:title">
+
+                 <ViewDetail></ViewDetail>
+                </Route>
+                <Route  path="/project">
+
+                 <Projects></Projects>
                 </Route>
               </Switch>
 

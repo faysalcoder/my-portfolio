@@ -11,6 +11,7 @@ import Education from './Education/Education';
 import DeveloperBanner from './DeveloperBanner/DeveloperBanner';
 import Navbar from './Navbar/Navbar';
 import Service from './Service/Service';
+import ContactMe from './ContactMe/ContactMe';
 
 
 
@@ -31,7 +32,9 @@ const Home = () => {
                 <Education></Education>
 
                 <ImageSlider></ImageSlider>
-                <Contact></Contact>
+                {/* <Contact></Contact>
+                 */}
+                 <ContactMe></ContactMe>
             </div>
 
 

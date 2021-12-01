@@ -1,6 +1,7 @@
 import React from 'react';
 import { Reveal } from "react-reveal/";
 import {Container, Nav, Navbar} from 'react-bootstrap'
+import Typewriter from 'typewriter-effect';
 
 const DeveloperBanner = () => {
     return (
@@ -26,7 +27,7 @@ const DeveloperBanner = () => {
                     alt=""
                 />
                 <div className="overlay_color"></div>
-               <Container>
+                <div className="container" style={{textAlign:'start'}}>
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="frelencer_content developer_content">
@@ -39,19 +40,27 @@ const DeveloperBanner = () => {
                                 <React.Fragment >
                                     <Reveal effect="fadeInUp" duration={500}>
                                         <h4>
-                                            <span>Hi I am</span>
+                                            <span>FRONT-END DEVELOPER</span>
                                         </h4>
                                     </Reveal>
                                     <Reveal effect="fadeInUp" duration={700}>
                                         <h2 className="t_color">Faysal Sikder</h2>
                                     </Reveal>
                                     <Reveal effect="fadeInUp" duration={900}>
-                                        <p className="t_color">I am Full stack Developer</p>
+                                    <p style={{fontSize:'36px'}}>
+                            <Typewriter
+                                options={{
+                                    strings: ['Full Stack Developer', 'MERN Stack Developer'],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                        </p>
                                     </Reveal>
                                     <Reveal effect="fadeInUp" duration={1000}>
-                                        <a href="./" className="chat_btn">
-                                            Let's Chat
-                                        </a>
+                                    <a href="https://drive.google.com/uc?export=download&id=1h5_VS6RcpT-cY20vZOfiqyiZv6hS7pij"> <button className="classic-btn2"> Download CV</button></a>
+                        <a href="#contact"><button className="classic-btn"> Hire Me</button></a>
+
                                     </Reveal>
                                 </React.Fragment>
 
@@ -89,16 +98,10 @@ const DeveloperBanner = () => {
                                         />
                                     </div>
                                 </Reveal>
+                               
                                 <Reveal effect="fadeInDown" duration={1600}>
                                     <img
-                                        className="f_img_seven"
-                                        src=" https://i.ibb.co/R0N5NQJ/angular.png"
-                                        alt=""
-                                    />
-                                </Reveal>
-                                <Reveal effect="fadeInDown" duration={1600}>
-                                    <img
-                                    style={{width:'100%'}}
+                                    style={{width:'80%'}}
                                         className="f_img_four"
                                         src="https://i.ibb.co/0Zf9Hnr/vector-potriat1-ai.png"
                                         alt=""
@@ -132,7 +135,8 @@ const DeveloperBanner = () => {
                             </div>
                         </div>
                     </div>
-                    </Container>
+                    </div>
+                  
             </section>
         </div>
     );
