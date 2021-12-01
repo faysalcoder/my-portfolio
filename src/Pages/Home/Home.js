@@ -24,7 +24,7 @@ const Home = () => {
 
 
             <div >
-<Navbar></Navbar>
+{/* <Navbar></Navbar> */}
                 <DeveloperBanner></DeveloperBanner>
                 <Service></Service>
                 <Info></Info>

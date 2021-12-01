@@ -101,7 +101,7 @@ const DeveloperBanner = () => {
                                
                                 <Reveal effect="fadeInDown" duration={1600}>
                                     <img
-                                    style={{width:'80%'}}
+                                    style={{width:'90%'}}
                                         className="f_img_four"
                                         src="https://i.ibb.co/0Zf9Hnr/vector-potriat1-ai.png"
                                         alt=""

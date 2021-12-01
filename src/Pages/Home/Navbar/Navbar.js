@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   
     return (
-        <div>
+        
              <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
         <nav className={`navbar navbar-expand-lg navbar-light dark_menu`}>
           <div className={`container custome_container`}>
@@ -139,7 +139,7 @@ const Navbar = () => {
           </div>
         </nav>
       </Sticky>
-        </div>
+        
     );
 };
 
