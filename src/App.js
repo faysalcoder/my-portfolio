@@ -1,23 +1,68 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './Pages/Home/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ParticleConfig from './Pages/Home/ParticaleConfig/ParticleConfig';
+import Particles from 'react-particles-js';
+import { useEffect, useState } from 'react';
+import { HashLoader } from 'react-spinners';
+import Typewriter from 'typewriter-effect';
+
+
 
 function App() {
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000);
+  }, [])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div>
+        {
+          loading ? <div style={{ backgroundColor: '#2D2D2D', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100vh' }}>
+
+
+
+            <div>
+              <h1 style={{ color: '#D7D7D7' }}>
+                <Typewriter
+                  options={{
+                    strings: ['Welcome'],
+                    autoStart: true,
+
+                  }}
+                />
+              </h1> <br />
+              <HashLoader color={'#4A90E2'} loading={loading} size={60} />
+            </div>
+
+
+          </div>
+            :
+
+            <Router>
+
+              <Switch>
+                <Route exact path="/">
+
+                  <Home></Home>
+                </Route>
+              </Switch>
+
+            </Router>
+
+
+        }
+      </div>
+
+
+
+
     </div>
   );
 }
