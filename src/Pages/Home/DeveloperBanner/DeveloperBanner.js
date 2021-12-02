@@ -1,12 +1,12 @@
 import React from 'react';
 import { Reveal } from "react-reveal/";
-import {Container, Nav, Navbar} from 'react-bootstrap'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 import Typewriter from 'typewriter-effect';
 
 const DeveloperBanner = () => {
     return (
         <div>
-           
+
 
             <section
 
@@ -17,17 +17,17 @@ const DeveloperBanner = () => {
                 style={{
                     background:
                         "linear-gradient( 1.14deg, rgb(244,247,252) 0%, rgb(255,255,255) 100%)",
-                        width:'100%'
+                    width: '100%'
                 }}
-                
+
             >
                 <img
-                    className="d_shap"
+                    className="d_shap img-fluid"
                     src="https://i.ibb.co/2ghshsG/shap-b41f1706.png"
                     alt=""
                 />
                 <div className="overlay_color"></div>
-                <div className="container" style={{textAlign:'start'}}>
+                <div className="container-fluid" >
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="frelencer_content developer_content">
@@ -38,7 +38,7 @@ const DeveloperBanner = () => {
                                 />
 
                                 <React.Fragment >
-                                    <Reveal effect="fadeInUp" duration={500}>
+                                    <Reveal effect="fadeInUp" duration={500} style={{ textAlign: 'start' }}>
                                         <h4>
                                             <span>FRONT-END DEVELOPER</span>
                                         </h4>
@@ -47,19 +47,19 @@ const DeveloperBanner = () => {
                                         <h2 className="t_color">Faysal Sikder</h2>
                                     </Reveal>
                                     <Reveal effect="fadeInUp" duration={900}>
-                                    <p style={{fontSize:'36px'}}>
-                            <Typewriter
-                                options={{
-                                    strings: ['Full Stack Developer', 'MERN Stack Developer'],
-                                    autoStart: true,
-                                    loop: true,
-                                }}
-                            />
-                        </p>
+                                        <p style={{ fontSize: '36px' }}>
+                                            <Typewriter
+                                                options={{
+                                                    strings: ['Full Stack Developer', 'MERN Stack Developer'],
+                                                    autoStart: true,
+                                                    loop: true,
+                                                }}
+                                            />
+                                        </p>
                                     </Reveal>
                                     <Reveal effect="fadeInUp" duration={1000}>
-                                    <a href="https://drive.google.com/uc?export=download&id=1h5_VS6RcpT-cY20vZOfiqyiZv6hS7pij"> <button className="classic-btn2"> Download CV</button></a>
-                        <a href="#contact"><button className="classic-btn"> Hire Me</button></a>
+                                        <a href="https://drive.google.com/uc?export=download&id=1h5_VS6RcpT-cY20vZOfiqyiZv6hS7pij"> <button className="classic-btn2"> Download CV</button></a>
+                                        <a href="#contact"><button className="classic-btn"> Hire Me</button></a>
 
                                     </Reveal>
                                 </React.Fragment>
@@ -67,14 +67,14 @@ const DeveloperBanner = () => {
                                 <div className="developer_skill">
                                     <div className="item">
                                         <p>
-                                            <span>12</span> Years <br />
-                                            Experence
+                                            <span>7+</span> Projects <br />
+
                                         </p>
                                     </div>
                                     <div className="item">
                                         <p>
-                                            <span>165</span> Projects Completed
-                                            <br /> on 18 Countries
+                                            <span>500+</span> Problem Solved
+
                                         </p>
                                     </div>
                                 </div>
@@ -92,16 +92,16 @@ const DeveloperBanner = () => {
                                 <Reveal effect="fadeInRight" duration={1200}>
                                     <div className="f_img_two">
                                         <img
-                                            className=""
+                                            className="img-fluid"
                                             src="https://i.ibb.co/9vx2km5/polygon.png"
                                             alt=""
                                         />
                                     </div>
                                 </Reveal>
-                               
+
                                 <Reveal effect="fadeInDown" duration={1600}>
                                     <img
-                                    style={{width:'90%'}}
+                                        style={{ width: '90%' }}
                                         className="f_img_four"
                                         src="https://i.ibb.co/0Zf9Hnr/vector-potriat1-ai.png"
                                         alt=""
@@ -135,8 +135,8 @@ const DeveloperBanner = () => {
                             </div>
                         </div>
                     </div>
-                    </div>
-                  
+                </div>
+
             </section>
         </div>
     );

@@ -6,10 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import { Container, Button } from 'react-bootstrap';
 import useProjects from '../../../hooks/useProjects';
 import { Link } from 'react-router-dom';
+import Pagetitle from '../../../Shared/Pagetitle';
+import myProjects from '../../../Shared/projects';
 
 
 function ImageSlider() {
-    const { projects } = useProjects();
+    const projects = myProjects;
 
     const settings = {
         centerMode: true,
@@ -39,8 +41,8 @@ function ImageSlider() {
         ]
     }
     return (
-        <Container data-aos="fade-up">
-            <h1 style={{ borderBottom: '5px solid #FF4522', display: 'inline-block', marginBottom: '30px' }}>Projects</h1>
+        <Container data-aos="fade-up" className="mt-5" id="portfolio">
+            <Pagetitle title="Projects" />
             <Slider {...settings}>
 
                 {
@@ -55,7 +57,7 @@ function ImageSlider() {
 
 
                             <ul className="social-icons">
-                                <li><Link to={`/project/${project.title}`}><button className="classic-btn2"  >
+                                <li><Link to={`/project/${project.id}`}><button className="classic-btn2"  >
                                     Details
                                 </button></Link></li>
 

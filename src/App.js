@@ -54,14 +54,14 @@ function App() {
 
                   <Home></Home>
                 </Route>
-                
-                <Route  path="/project">
 
-                 <Projects></Projects>
+                <Route exact path="/project">
+
+                  <Projects></Projects>
                 </Route>
-                <Route  path="/project/:title">
+                <Route exact path="/project/:id">
 
-                 <ViewDetail></ViewDetail>
+                  <ViewDetail></ViewDetail>
                 </Route>
               </Switch>
 

@@ -12,6 +12,7 @@ import DeveloperBanner from './DeveloperBanner/DeveloperBanner';
 import Navbar from './Navbar/Navbar';
 import Service from './Service/Service';
 import ContactMe from './ContactMe/ContactMe';
+import AboutMe from './AboutMe/AboutMe';
 
 
 
@@ -24,17 +25,19 @@ const Home = () => {
 
 
             <div >
-{/* <Navbar></Navbar> */}
+                <Navbar></Navbar>
                 <DeveloperBanner></DeveloperBanner>
-                <Service></Service>
-                <Info></Info>
+                <AboutMe></AboutMe>
+                <ImageSlider></ImageSlider>
+                {/* <Service></Service> */}
+
                 {/* <About></About> */}
                 <Education></Education>
 
-                <ImageSlider></ImageSlider>
+
                 {/* <Contact></Contact>
                  */}
-                 <ContactMe></ContactMe>
+                <ContactMe></ContactMe>
             </div>
 
 
