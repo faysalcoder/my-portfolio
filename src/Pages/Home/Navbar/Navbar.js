@@ -2,6 +2,7 @@ import React from 'react';
 import Sticky from 'react-stickynode';
 import { Link } from "react-scroll";
 
+
 const Navbar = () => {
 
   return (
@@ -113,10 +114,11 @@ const Navbar = () => {
                 </Link>
               </li> */}
               <li className="nav-item">
+                
                 <Link
                   className="nav-link"
                   activeClass="active"
-                  to="blog"
+                  to="/blog"
                   spy={true}
                   smooth={true}
                   offset={-86}

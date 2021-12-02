@@ -10,6 +10,7 @@ import { HashLoader } from 'react-spinners';
 import Typewriter from 'typewriter-effect';
 import ViewDetail from './Pages/Home/ViewDetail/ViewDetail';
 import Projects from './Pages/Home/Projects/Projects';
+import Blog from './Pages/Blog/Blog';
 
 
 
@@ -53,6 +54,10 @@ function App() {
                 <Route exact path="/">
 
                   <Home></Home>
+                </Route>
+                <Route path="/blog">
+
+                 <Blog></Blog>
                 </Route>
 
                 <Route exact path="/project">

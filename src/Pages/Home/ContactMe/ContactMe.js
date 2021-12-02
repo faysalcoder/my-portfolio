@@ -54,7 +54,7 @@ const ContactMe = () => {
                 <div className="input_form">
                   <div className={`section_title_two `}>
                     <h6>Contact us</h6>
-                    <h2>Let me know here Know Here</h2>
+                    <h2>Let me Know Here</h2>
                   </div>
 
 

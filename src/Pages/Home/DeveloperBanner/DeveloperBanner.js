@@ -47,7 +47,7 @@ const DeveloperBanner = () => {
                                         <h2 className="t_color">Faysal Sikder</h2>
                                     </Reveal>
                                     <Reveal effect="fadeInUp" duration={900}>
-                                        <p style={{ fontSize: '36px' }}>
+                                        <p style={{ fontSize: '26px' }}>
                                             <Typewriter
                                                 options={{
                                                     strings: ['Full Stack Developer', 'MERN Stack Developer'],
