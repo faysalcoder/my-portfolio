@@ -9,15 +9,26 @@ const Navbar = () => {
     <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
       <nav className={`navbar navbar-expand-lg navbar-light dark_menu`}>
         <div className={`container custome_container`}>
-          <a className="navbar-brand logo_h" href="./">
-            <h3>FS</h3>
+          <a className="d-flex align-items-center" style={{textDecoration:"none"}} href="./">
+          <span className="h1 ms-2 " style={{color:"#343D46"}} >&#123;</span>
+            <img src="/fs.png" alt="" width="50px" height="50px"/>
+            <span className="h1 ms-2 " style={{color:"#343D46"}} >&#125;</span>
+         
           </a>
           <a
-            href="./"
+            style={{ textDecoration: 'none' }}
+             href="https://www.linkedin.com/in/faysal-sikder"
             className="btn get-btn get-btn-two d-lg-none d-md-block login"
           >
-            Login
+            Reach Me
           </a>
+
+
+
+
+
+
+          
           <button
             className="navbar-toggler"
             type="button"

@@ -27,7 +27,7 @@ const DeveloperBanner = () => {
                     alt=""
                 />
                 <div className="overlay_color"></div>
-                <div className="container-fluid" >
+                <div className="container" >
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="frelencer_content developer_content">
@@ -101,7 +101,7 @@ const DeveloperBanner = () => {
 
                                 <Reveal effect="fadeInDown" duration={1600}>
                                     <img
-                                        style={{ width: '90%' }}
+                                        style={{ width: '100%' }}
                                         className="f_img_four"
                                         src="https://i.ibb.co/0Zf9Hnr/vector-potriat1-ai.png"
                                         alt=""
