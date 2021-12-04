@@ -1,6 +1,7 @@
 import React from 'react';
 import Sticky from 'react-stickynode';
 import { Link } from "react-scroll";
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -10,15 +11,15 @@ const Navbar = () => {
     <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
       <nav className={`navbar navbar-expand-lg navbar-light dark_menu`}>
         <div className={`container custome_container`}>
-          <a className="d-flex align-items-center" style={{textDecoration:"none"}} href="./">
-          <span className="h1 ms-2 " style={{color:"#343D46"}} >&#123;</span>
-            <img src="/fs.png" alt="" width="50px" height="50px"/>
-            <span className="h1 ms-2 " style={{color:"#343D46"}} >&#125;</span>
-         
+          <a className="d-flex align-items-center" style={{ textDecoration: "none" }} href="./">
+            <span className="h1 ms-2 " style={{ color: "#343D46" }} >&#123;</span>
+            <img src="/fs.png" alt="" width="50px" height="50px" />
+            <span className="h1 ms-2 " style={{ color: "#343D46" }} >&#125;</span>
+
           </a>
           <a
             style={{ textDecoration: 'none' }}
-             href="https://www.linkedin.com/in/faysal-sikder"
+            href="https://www.linkedin.com/in/faysal-sikder"
             className="btn get-btn get-btn-two d-lg-none d-md-block login"
           >
             Reach Me
@@ -29,7 +30,7 @@ const Navbar = () => {
 
 
 
-          
+
           <button
             className="navbar-toggler"
             type="button"
@@ -97,7 +98,7 @@ const Navbar = () => {
                   offset={-86}
                   duration={500}
                 >
-                  Portfolio
+                  Work
                 </Link>
               </li>
               {/* <li className="nav-item">
@@ -113,20 +114,7 @@ const Navbar = () => {
                   Testimonial
                 </Link>
               </li> */}
-              <li className="nav-item">
-                
-                <Link
-                  className="nav-link"
-                  activeClass="active"
-                  to="/blog"
-                  spy={true}
-                  smooth={true}
-                  offset={-86}
-                  duration={500}
-                >
-                  Blog
-                </Link>
-              </li>
+
               <li className="nav-item">
                 <Link
                   className="nav-link"
@@ -139,6 +127,24 @@ const Navbar = () => {
                 >
                   Contact
                 </Link>
+              </li>
+              <li className="nav-item">
+
+                <NavLink
+                  className="nav-link"
+                  activeClass="active"
+                  to="/blog"
+                  spy={true}
+                  smooth={true}
+                  offset={-86}
+                  duration={500}
+                >
+
+
+                  Blog
+
+                </NavLink>
+
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right d-md-none d-lg-block">

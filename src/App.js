@@ -11,6 +11,7 @@ import Typewriter from 'typewriter-effect';
 import ViewDetail from './Pages/Home/ViewDetail/ViewDetail';
 import Projects from './Pages/Home/Projects/Projects';
 import Blog from './Pages/Blog/Blog';
+import { Navbar } from 'react-bootstrap';
 
 
 
@@ -57,7 +58,7 @@ function App() {
                 </Route>
                 <Route path="/blog">
 
-                 <Blog></Blog>
+                  <Blog></Blog>
                 </Route>
 
                 <Route exact path="/project">
